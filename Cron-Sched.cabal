@@ -1,0 +1,29 @@
+Name:		Cron-Sched
+Version:	0.0.1
+Author:		andrew.darqui@gmail.com
+Maintainer:     andrew.darqui@gmail.com
+License:        BSD3
+License-File:	LICENSE
+Synopsis:	A simple scheduler which implements my fork of the cron package
+Description:	A simple scheduler which implements my fork of the cron package
+Category:	System
+Build-Type:	Simple
+Cabal-Version:	>= 1.8
+tested-with:    GHC == 7.6.2
+extra-source-files: README.md
+
+Source-Repository head
+    Type:	git
+    Location:	https://github.com/adarqui/Cron-Sched
+
+Library
+    HS-Source-Dirs:     src
+    Exposed-Modules:    System.Cron.Sched
+    Build-Depends:      base == 4.*, attoparsec, text, time, cron
+    GHC-Options:        -Wall
+
+Executable exec
+    Main-is:		exec.hs
+    HS-Source-Dirs:     examples
+    Build-Depends:	base == 4.*, bytestring, cron, Cron-Sched
+    GHC-Options:        -O2 -Wall -rtsopts -threaded

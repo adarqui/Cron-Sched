@@ -1,0 +1,6 @@
+[submodule "cron"]
+	path = cron
+	url = https://github.com/adarqui/cron
+[submodule "deps/cron"]
+	path = deps/cron
+	url = https://github.com/adarqui/cron
