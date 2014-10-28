@@ -19,11 +19,11 @@ Source-Repository head
 Library
     HS-Source-Dirs:     src
     Exposed-Modules:    System.Cron.Sched
-    Build-Depends:      base == 4.*, attoparsec, text, time, cron
+    Build-Depends:      base == 4.*, attoparsec, text, time, Cron
     GHC-Options:        -Wall
 
 Executable exec
     Main-is:		exec.hs
     HS-Source-Dirs:     examples
-    Build-Depends:	base == 4.*, bytestring, cron, Cron-Sched
+    Build-Depends:	base == 4.*, bytestring, Cron, Cron-Sched
     GHC-Options:        -O2 -Wall -rtsopts -threaded
