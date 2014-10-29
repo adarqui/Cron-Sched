@@ -19,7 +19,7 @@ Source-Repository head
 Library
     HS-Source-Dirs:     src
     Exposed-Modules:    System.Cron.Sched
-    Build-Depends:      base == 4.*, attoparsec, text, time, Cron
+    Build-Depends:      base == 4.*, attoparsec, either-unwrap, monad-loops, text, time, Cron
     GHC-Options:        -Wall
 
 Executable exec
